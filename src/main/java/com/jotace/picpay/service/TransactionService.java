@@ -17,7 +17,7 @@ public class TransactionService {
     @Autowired
     private TransactionRepository repository;
 
-    public TransactionResponse createTransaction(TransactionRequest request) {
+    public Transaction createTransaction(TransactionRequest request) {
         var sender = service.findUserById(request.senderId());
         var receiver = service.findUserById(request.receiverId());
         var value = request.value();
@@ -25,7 +25,7 @@ public class TransactionService {
         service.validate(sender, value);
 
         sender.setAmount(sender.getAmount().subtract(value));
-        receiver.setAmount(sender.getAmount().add(value));
+        receiver.setAmount(receiver.getAmount().add(value));
 
         var transaction = new Transaction();
 
@@ -38,6 +38,6 @@ public class TransactionService {
         service.save(receiver);
         repository.save(transaction);
 
-        return new TransactionResponse(transaction);
+        return transaction;
     }
 }
