@@ -1,7 +1,9 @@
-package com.jotace.picpay.domain;
+package com.jotace.picpay.domain.user;
 
 import jakarta.persistence.*;
 import lombok.*;
+
+import java.math.BigDecimal;
 
 @Entity(name = "users")
 @Table(name = "users")
@@ -26,4 +28,6 @@ public class User {
     private String password;
 
     private UserType userType;
+
+    private BigDecimal amount;
 }

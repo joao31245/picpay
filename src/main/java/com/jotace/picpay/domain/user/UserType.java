@@ -1,4 +1,4 @@
-package com.jotace.picpay.domain;
+package com.jotace.picpay.domain.user;
 
 public enum UserType {
     MERCHANT,
