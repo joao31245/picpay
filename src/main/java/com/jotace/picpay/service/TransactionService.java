@@ -39,15 +39,15 @@ public class TransactionService {
         transaction.setTransactionValue(value);
         transaction.setDate(LocalDate.now());
 
-        userService.save(sender);
-        userService.save(receiver);
-        repository.save(transaction);
-
         notificationService.sendEmail(sender.getEmail(),"Money transaction", "You sent "
                 + transaction.getTransactionValue() + " to " + receiver.getFullName());
 
         notificationService.sendEmail(receiver.getEmail(),"Money transaction", "You received "
                 + transaction.getTransactionValue() + " from " + sender.getFullName());
+
+        userService.save(sender);
+        userService.save(receiver);
+        repository.save(transaction);
 
         return transaction;
     }
