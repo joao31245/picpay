@@ -21,4 +21,9 @@ public class ControllerAdvice {
         return ResponseEntity.notFound().build();
     }
 
+    @ExceptionHandler(RuntimeException.class)
+    public ResponseEntity<ExceptionResponse> threatGeneral(RuntimeException exception) {
+        var response = new ExceptionResponse(exception.getMessage(), "500");
+        return ResponseEntity.internalServerError().body(response);
+    }
 }
