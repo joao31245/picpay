@@ -8,11 +8,10 @@ import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/user")
@@ -27,6 +26,12 @@ public class UserController {
         service.save(user);
         var uri = uriBuilder.path("/user/{id}").buildAndExpand(user.getId()).toUri();
         return ResponseEntity.created(uri).body(new UserResponse(user));
+    }
+    @GetMapping
+    public ResponseEntity<List<UserResponse>> get() {
+        var users = service.getAllUsers().stream().map(UserResponse::new).toList();
+
+        return ResponseEntity.ok(users);
     }
 
 }
