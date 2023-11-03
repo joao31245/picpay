@@ -5,16 +5,22 @@ Desafio do picpay, para fazer um picpay simplificado com dois tipos de usuários
 ## 🚀 Começando
 
 Para conseguir uma cópia do projeto somente será necessário clicar em code e download zip.
-
 ![printexplicativo](https://github.com/joao31245/picpay/assets/134329276/729e82fa-778d-4096-a282-1ac71b3aeeb6)
 
 
 ### 📋 Pré-requisitos
 
-De que coisas você precisa para instalar o software e como instalá-lo?
-
 ```
-Dar exemplos
+JDK 19 Instalada.
+```
+```
+IDE de preferencia IntelliJ
+```
+```
+Conta no aws.
+```
+```
+ses condifurado(aws).
 ```
 
 ### 🔧 Instalação
@@ -24,13 +30,7 @@ Uma série de exemplos passo-a-passo que informam o que você deve executar para
 Diga como essa etapa será:
 
 ```
-Dar exemplos
-```
 
-E repita:
-
-```
-Até finalizar
 ```
 
 Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
@@ -79,10 +79,8 @@ Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as vers�
 
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
+* **João Carlos Machado Filho** - *Trabalho Inteiro* - [umdesenvolvedor]([https://github.com/linkParaPerfil](https://github.com/joao31245))
 
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
 
 ## 📄 Licença
 
