@@ -23,7 +23,7 @@ IDE de preferencia IntelliJ
 Conta no aws.
 ```
 ```
-ses condifurado(aws).
+ses configuraado(aws).
 ```
 
 ### 🔧 Instalação
@@ -80,7 +80,7 @@ Adicionar politicas do ses
 ![Selecionar politicas do ses](https://github.com/joao31245/picpay/assets/134329276/505e7ca1-d0c7-407a-8582-db749879e180)
 
 ```
-Selecione o usuário criadom, vá em credenciais de segurança e clique em criar chave de acesso:
+Selecione o usuário criado, vá em credenciais de segurança e clique em criar chave de acesso:
 ```
 ![Criar chave de acesso](https://github.com/joao31245/picpay/assets/134329276/6ca9b063-b92d-4fe9-9a35-c9a9fdd818f2)
 
@@ -104,6 +104,8 @@ Passe as credenciais do seu usuário para o codigo no arquivo application.propet
 Agora no código
 ```
 No pacote infra selecione o pacote ses e a classe SesConfig e então mude o e-mail para o email da identidade cadastrada.
+![Mude o email](https://github.com/joao31245/picpay/assets/134329276/cead5c14-c0ef-406c-b77c-0e4ec4d81f45)
+
 
 Como a conta do ses é gratuita, você só pode enviar e-mail para identidades cadastradas.
 
