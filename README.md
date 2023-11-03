@@ -25,13 +25,22 @@ ses condifurado(aws).
 
 ### 🔧 Instalação
 
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
-
-Diga como essa etapa será:
-
+Passo 1:
 ```
-
+Configurar ses:
 ```
+```
+Pesquise o serviço:
+```
+![SES1](https://github.com/joao31245/picpay/assets/134329276/90aed305-43d7-4640-b504-b861138b0221)
+```
+Criar nova identidade:
+```
+![Ir até identidades verificadas](https://github.com/joao31245/picpay/assets/134329276/8d9a083f-2c3b-4409-97e3-2d7dc3fba432)
+![criar identidade](https://github.com/joao31245/picpay/assets/134329276/cb0379c6-be48-4f0b-8804-9b633ab77ec2)
+
+
+
 
 Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
 
@@ -39,60 +48,22 @@ Termine com um exemplo de como obter dados do sistema ou como usá-los para uma 
 
 Explicar como executar os testes automatizados para este sistema.
 
-### 🔩 Analise os testes de ponta a ponta
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-### ⌨️ E testes de estilo de codificação
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-## 📦 Implantação
-
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
 
 ## 🛠️ Construído com
 
 Mencione as ferramentas que você usou para criar seu projeto
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
+* [Spring Boot](https://spring.io/projects/spring-boot) - O framework web usado
 * [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
+* [AWS](https://rometools.github.io/rome/) - Para utilizar o serviço de E-mails.
 
-## 🖇️ Colaborando
-
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
-
-## 📌 Versão
-
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
 
 ## ✒️ Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
-
-* **João Carlos Machado Filho** - *Trabalho Inteiro* - [umdesenvolvedor](https://github.com/joao31245)
+* **João Carlos Machado Filho** - *Trabalho Inteiro* - [João Carlos](https://github.com/joao31245)
 
 
 ## 📄 Licença
-
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
-
-## 🎁 Expressões de gratidão
-
-* Conte a outras pessoas sobre este projeto 📢;
-* Convide alguém da equipe para uma cerveja 🍺;
-* Um agradecimento publicamente 🫂;
-* etc.
-
-
+Sob Open Software License v3.0.
 ---
-⌨️ com ❤️ por [Armstrong Lohãns](https://gist.github.com/lohhans) 😊
+⌨️ com ❤️ por [João Carlos](https://github.com/joao31245) 😊
