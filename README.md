@@ -79,7 +79,7 @@ Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as vers�
 
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
-* **João Carlos Machado Filho** - *Trabalho Inteiro* - [umdesenvolvedor]([https://github.com/linkParaPerfil](https://github.com/joao31245))
+* **João Carlos Machado Filho** - *Trabalho Inteiro* - [umdesenvolvedor](https://github.com/joao31245)
 
 
 ## 📄 Licença
