@@ -7,7 +7,6 @@ Desafio do picpay, para fazer um picpay simplificado com dois tipos de usuários
 Para conseguir uma cópia do projeto somente será necessário clicar em code e download zip.
 ![printexplicativo](https://github.com/joao31245/picpay/assets/134329276/729e82fa-778d-4096-a282-1ac71b3aeeb6)
 
-
 ### 📋 Pré-requisitos
 
 ```
@@ -111,8 +110,6 @@ Como a conta do ses é gratuita, você só pode enviar e-mail para identidades c
 
 
 ## 🛠️ Construído com
-
-Mencione as ferramentas que você usou para criar seu projeto
 
 * [Spring Boot](https://spring.io/projects/spring-boot) - O framework web usado
 * [Maven](https://maven.apache.org/) - Gerente de Dependência
