@@ -43,6 +43,8 @@ Criar nova identidade:
 ![criar identidade](https://github.com/joao31245/picpay/assets/134329276/cb0379c6-be48-4f0b-8804-9b633ab77ec2)
 Apos criar a identidade, confirme por e-mail.
 
+Passo 2:
+
 ```
 Configurar IAM:
 ```
@@ -78,7 +80,7 @@ Adicionar politicas do ses
 ![Selecionar politicas do ses](https://github.com/joao31245/picpay/assets/134329276/505e7ca1-d0c7-407a-8582-db749879e180)
 
 ```
-Selecione o usuário e clique em criar chave de acesso:
+Selecione o usuário criadom, vá em credenciais de segurança e clique em criar chave de acesso:
 ```
 ![Criar chave de acesso](https://github.com/joao31245/picpay/assets/134329276/6ca9b063-b92d-4fe9-9a35-c9a9fdd818f2)
 
@@ -89,6 +91,8 @@ Selecione esse tipo para chave de acesso:
 ![Selecionar tipo de chave de acesso](https://github.com/joao31245/picpay/assets/134329276/fdfc7c18-ce9c-43e5-87f0-4f468b33455e)
 
 Após criar a identidade e a chave de acesso será necessário passar elas pro código.
+
+Passo 3:
 
 ```
 Primeiro nas propiedades:
