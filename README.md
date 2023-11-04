@@ -33,7 +33,7 @@ Configurar ses:
 ```
 Pesquise o serviço:
 ```
-![SES1](https://github.com/joao31245/picpay/assets/134329276/90aed305-43d7-4640-b504-b861138b0221)
+![SES1](https://drive.google.com/file/d/1VHcUkfNqMhT-GoqEvucarDbxs2XLVRtE/view?usp=sharing)
 ```
 Criar nova identidade:
 ```
