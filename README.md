@@ -53,43 +53,47 @@ Configurar IAM:
 ```
 Pesqiosar IAM:
 ```
-<img src="(https://github.com/joao31245/picpay/assets/134329276/cb0379c6-be48-4f0b-8804-9b633ab77ec2" />
-![Pesquisar IAM](https://github.com/joao31245/picpay/assets/134329276/d2f6dc72-52a9-40b5-82c9-de2cba5eec82)
+
+![Pesquisar IAM](https://github.com/joao31245/picpay/assets/134329276/20dd7ac6-b9ff-470e-b6bc-70ebbadc707b)
 
 ```
 Vá até usuários
 ```
-
-![Vá até usuários](https://github.com/joao31245/picpay/assets/134329276/2c5e97ac-7551-477b-b659-fb1463e179d8)
+![Vá até usuários](https://github.com/joao31245/picpay/assets/134329276/7fa90164-82ea-4ad8-9f4e-db4547b0294f)
 
 ```
 Crie um novo usuário
 ```
 
-![Criar usuários](https://github.com/joao31245/picpay/assets/134329276/94315dc8-0edc-43c4-af0a-363db937113e)
+![Criar usuários](https://github.com/joao31245/picpay/assets/134329276/ce3e3338-c246-431e-9419-88b9789dea1e)
+
 
 ```
 Anexar politicas diretamente
 ```
 
-![anexar politicas diretamente](https://github.com/joao31245/picpay/assets/134329276/1a35b48e-146f-4a38-8815-b7edbcd512b6)
+![anexar politicas diretamente](https://github.com/joao31245/picpay/assets/134329276/8e1fd958-dc95-4f31-be33-b0a2d38b34f8)
+
 
 ```
 Adicionar politicas do ses
 ```
 
-![Selecionar politicas do ses](https://github.com/joao31245/picpay/assets/134329276/505e7ca1-d0c7-407a-8582-db749879e180)
+![Selecionar politicas do ses](https://github.com/joao31245/picpay/assets/134329276/d85bcb6c-ce93-4200-9766-bac557a7b173)
+
 
 ```
 Selecione o usuário criado, vá em credenciais de segurança e clique em criar chave de acesso:
 ```
-![Criar chave de acesso](https://github.com/joao31245/picpay/assets/134329276/6ca9b063-b92d-4fe9-9a35-c9a9fdd818f2)
+
+![Criar chave de acesso](https://github.com/joao31245/picpay/assets/134329276/5afac4b3-1021-465b-b407-115c818f9a05)
 
 ```
 Selecione esse tipo para chave de acesso:
 ```
 
-![Selecionar tipo de chave de acesso](https://github.com/joao31245/picpay/assets/134329276/fdfc7c18-ce9c-43e5-87f0-4f468b33455e)
+![Selecionar tipo de chave de acesso](https://github.com/joao31245/picpay/assets/134329276/a39a5e93-cb68-4b64-951f-374e5684c904)
+
 
 Após criar a identidade e a chave de acesso será necessário passar elas pro código.
 
@@ -99,13 +103,16 @@ Passo 3:
 Primeiro nas propiedades:
 ```
 Passe as credenciais do seu usuário para o codigo no arquivo application.propeties.
-![Passe as credenciais no código](https://github.com/joao31245/picpay/assets/134329276/ec77fb6f-94ad-4ede-8e89-a25cdac08c68)
+
+![Passe as credenciais no código](https://github.com/joao31245/picpay/assets/134329276/d2de6b48-f08e-44ee-8689-b04d44d3ace9)
 
 ```
 Agora no código
 ```
+
 No pacote infra selecione o pacote ses e a classe SesConfig e então mude o e-mail para o email da identidade cadastrada.
-![Mude o email](https://github.com/joao31245/picpay/assets/134329276/cead5c14-c0ef-406c-b77c-0e4ec4d81f45)
+
+![Mude o email](https://github.com/joao31245/picpay/assets/134329276/e131d0e2-0d08-4343-89fc-0d216c5e15b2)
 
 
 Como a conta do ses é gratuita, você só pode enviar e-mail para identidades cadastradas.
