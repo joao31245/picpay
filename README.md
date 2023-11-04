@@ -29,18 +29,21 @@ ses configuraado(aws).
 Passo 1:
 ```
 Configurar ses:
+
 ```
 ```
 Pesquise o serviço:
 ```
-![SES1](https://drive.google.com/file/d/1VHcUkfNqMhT-GoqEvucarDbxs2XLVRtE/view?usp=drive_link)
+<img src="https://github.com/joao31245/picpay/assets/134329276/a7ac972d-74e1-4c2a-9e69-f8b330fc65ff" />
+
+
 ```
 Criar nova identidade:
 ```
-![Ir até identidades verificadas](https://github.com/joao31245/picpay/assets/134329276/8d9a083f-2c3b-4409-97e3-2d7dc3fba432)
-![criar identidade](https://github.com/joao31245/picpay/assets/134329276/cb0379c6-be48-4f0b-8804-9b633ab77ec2)
-Apos criar a identidade, confirme por e-mail.
+![Ir até identidades verificadas](https://github.com/joao31245/picpay/assets/134329276/59128d73-0033-4571-9615-f2fbbf494269)
 
+<img src="https://github.com/joao31245/picpay/assets/134329276/73c7b4ef-4b59-4680-ba75-2d778c110268" />
+Apos criar a identidade, confirme por e-mail.
 Passo 2:
 
 ```
@@ -50,7 +53,7 @@ Configurar IAM:
 ```
 Pesqiosar IAM:
 ```
-
+<img src="(https://github.com/joao31245/picpay/assets/134329276/cb0379c6-be48-4f0b-8804-9b633ab77ec2" />
 ![Pesquisar IAM](https://github.com/joao31245/picpay/assets/134329276/d2f6dc72-52a9-40b5-82c9-de2cba5eec82)
 
 ```
