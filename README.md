@@ -33,7 +33,7 @@ Configurar ses:
 ```
 Pesquise o serviço:
 ```
-![SES1](https://drive.google.com/file/d/1VHcUkfNqMhT-GoqEvucarDbxs2XLVRtE/view?usp=sharing)
+![SES1](https://drive.google.com/file/d/1VHcUkfNqMhT-GoqEvucarDbxs2XLVRtE/view?usp=drive_link)
 ```
 Criar nova identidade:
 ```
