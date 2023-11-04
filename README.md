@@ -5,7 +5,6 @@ Desafio do picpay, para fazer um picpay simplificado com dois tipos de usuários
 ## 🚀 Começando
 
 Para conseguir uma cópia do projeto somente será necessário clicar em code e download zip.
-![printexplicativo](https://github.com/joao31245/picpay/assets/134329276/729e82fa-778d-4096-a282-1ac71b3aeeb6)
 
 ### 📋 Pré-requisitos
 
