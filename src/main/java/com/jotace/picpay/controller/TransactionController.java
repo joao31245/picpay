@@ -3,7 +3,10 @@ package com.jotace.picpay.controller;
 import com.jotace.picpay.dto.TransactionRequest;
 import com.jotace.picpay.dto.TransactionResponse;
 import com.jotace.picpay.service.TransactionService;
-import com.jotace.picpay.service.UserService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,13 +18,20 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
-@RequestMapping("transaction")
+@RequestMapping(value = "transaction", produces = "application/json")
+@Tag(name = "Pic Pay simplified")
 public class TransactionController {
     @Autowired
     private TransactionService transactionService;
 
+
     @PostMapping
     @Transactional
+    @Operation(summary = "Create a transaction", method = "POST")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "201", description = "Worked!"),
+            @ApiResponse(responseCode = "500", description = "Internal Server Error")
+    })
     public ResponseEntity<TransactionResponse> post(@RequestBody @Valid TransactionRequest request,
                                                     UriComponentsBuilder uriBuilder) {
        var transaction = transactionService.createTransaction(request);
