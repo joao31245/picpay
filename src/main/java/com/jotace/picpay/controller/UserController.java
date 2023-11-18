@@ -14,6 +14,7 @@ import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
@@ -26,7 +27,7 @@ public class UserController {
     @Autowired
     private UserService service;
 
-    @PostMapping
+    @PostMapping("/register")
     @Transactional
     @Operation(summary = "Create a new User", method = "POST")
     @ApiResponses(value = {
@@ -34,9 +35,14 @@ public class UserController {
             @ApiResponse(responseCode = "500", description = "Internal Server Error")
     })
     public ResponseEntity<UserResponse> post(@RequestBody @Valid UserRequest request, UriComponentsBuilder uriBuilder) {
-        var user = new User(request);
+        String encryptedPassword = new BCryptPasswordEncoder().encode(request.password());
+
+        var user = new User(request, encryptedPassword);
+
         service.save(user);
+
         var uri = uriBuilder.path("/user/{id}").buildAndExpand(user.getId()).toUri();
+
         return ResponseEntity.created(uri).body(new UserResponse(user));
     }
     @GetMapping
