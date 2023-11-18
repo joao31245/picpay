@@ -33,11 +33,10 @@ public class TransactionController {
             @ApiResponse(responseCode = "500", description = "Internal Server Error")
     })
     public ResponseEntity<TransactionResponse> post(@RequestBody @Valid TransactionRequest request,
-                                                    UriComponentsBuilder uriBuilder) {
+                                                    UriComponentsBuilder uriBuilder) throws InterruptedException {
        var transaction = transactionService.createTransaction(request);
-       var uri = uriBuilder.path("/transaction/{id}").buildAndExpand(transaction.getId()).toUri();
 
-       return ResponseEntity.created(uri).body(new TransactionResponse(transaction));
+       return ResponseEntity.ok(transaction);
     }
 
 }
