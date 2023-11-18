@@ -1,8 +1,10 @@
 package com.jotace.picpay.controller;
 
 import com.jotace.picpay.domain.user.User;
-import com.jotace.picpay.dto.UserRequest;
-import com.jotace.picpay.dto.UserResponse;
+import com.jotace.picpay.dto.user.DeleteRequest;
+import com.jotace.picpay.dto.user.UpdateRequest;
+import com.jotace.picpay.dto.user.UserRequest;
+import com.jotace.picpay.dto.user.UserResponse;
 import com.jotace.picpay.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -49,4 +51,21 @@ public class UserController {
         return ResponseEntity.ok(users);
     }
 
+    @DeleteMapping
+    @Operation(summary = "Delete specific user from database", method = "Delete")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "201", description = "Worked!"),
+            @ApiResponse(responseCode = "500", description = "Internal Server Error"),
+            @ApiResponse(responseCode = "204", description = "No content")
+    })
+    public ResponseEntity delete(@RequestBody DeleteRequest request) {
+        service.delete(request);
+        return ResponseEntity.noContent().build();
+    }
+
+    @PutMapping
+    @Operation(summary = "Update specific user only accepting alters in email and password")
+    public ResponseEntity<UserResponse> update(@RequestBody UpdateRequest request){
+        return ResponseEntity.ok(service.update(request));
+    }
 }
