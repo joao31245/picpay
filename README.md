@@ -116,7 +116,30 @@ No pacote infra selecione o pacote ses e a classe SesConfig e então mude o e-ma
 
 
 Como a conta do ses é gratuita, você só pode enviar e-mail para identidades cadastradas.
+## Como usar
 
+### Controller user
+A aplicação contem dois usuários, sendo um deles comum(COMMON) e outro lojista(MERCHANT). O usuário lojista somente pode receber transações,
+em contraparte o usuário comum pode rececber e fazer transações.
+É necessário passar como parametro o tipo do usuário ao fazer o metodo post, tendo em mente que somente um deles pode realizar transações.
+
+```
+Metodo Get : http://localhost:8080/user
+```
+![ComoUsarGetUser](https://github.com/joao31245/email-service/assets/134329276/48bef09c-033d-4050-8949-16966abb43f6)
+
+```
+Metodo Post : http://localhost:8080/user
+```
+![ComoUsarPostUser](https://github.com/joao31245/email-service/assets/134329276/dcccc549-167d-45c5-bebd-6ce405998233)
+
+### Controller transaction
+```
+Metodo Post : http://localhost:8080/user
+```
+![ComoUsarPostTransaction](https://github.com/joao31245/email-service/assets/134329276/903bdaff-aa4a-4fef-907b-525a846c2857)
+
+Esses são os principais metodos, porém o sistema implementa todo o crud básico. Para mais detalhes, ao rodar a API, consulte: http://localhost:8080/swagger-ui/index.html#
 
 ## 🛠️ Construído com
 
