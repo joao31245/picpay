@@ -4,6 +4,8 @@ import com.jotace.picpay.dto.ExceptionResponse;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.ResponseEntity;
+import org.springframework.orm.jpa.JpaSystemException;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -32,5 +34,9 @@ public class ControllerAdvice {
     public ResponseEntity<ExceptionResponse> threatUsernameNotFound(UsernameNotFoundException exception) {
         var response = new ExceptionResponse(exception.getMessage(), "404");
         return ResponseEntity.badRequest().body(response);
+    }
+    @ExceptionHandler(BadCredentialsException.class)
+    public ResponseEntity sla(BadCredentialsException exception) {
+        return ResponseEntity.badRequest().body( exception.getStackTrace());
     }
 }
