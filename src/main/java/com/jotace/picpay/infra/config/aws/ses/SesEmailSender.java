@@ -1,4 +1,4 @@
-package com.jotace.picpay.infra.ses;
+package com.jotace.picpay.infra.config.aws.ses;
 
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.simpleemail.AmazonSimpleEmailService;

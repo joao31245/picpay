@@ -1,4 +1,4 @@
-package com.jotace.picpay.infra.config;
+package com.jotace.picpay.infra.config.aws;
 
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
