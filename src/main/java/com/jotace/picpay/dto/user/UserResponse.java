@@ -1,4 +1,4 @@
-package com.jotace.picpay.dto;
+package com.jotace.picpay.dto.user;
 
 import com.jotace.picpay.domain.user.User;
 import com.jotace.picpay.domain.user.UserType;
