@@ -39,11 +39,11 @@ public class User implements UserDetails {
 
     private boolean active;
 
-    public User(UserRequest request) {
+    public User(UserRequest request, String encryptedPassword) {
         this.fullName = request.fullName();
         this.cpf = request.cpf();
         this.email = request.email();
-        this.password = request.password();
+        this.password = encryptedPassword;
         this.userType = request.userType();
         this.amount = request.amount();
         this.active = true;
@@ -74,6 +74,10 @@ public class User implements UserDetails {
     @Override
     public String getUsername() {
         return this.email;
+    }
+    @Override
+    public String getPassword() {
+        return this.password;
     }
 
     @Override

@@ -55,11 +55,7 @@ public class TransactionService {
 
             var currentTime = LocalDateTime.now();
 
-
             var scheduledTime = transaction.getDate();
-
-
-            transaction.setDate(request.localDateTime());
 
             var delay = Duration.between(currentTime, scheduledTime).toMillis();
 

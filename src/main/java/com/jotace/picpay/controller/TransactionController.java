@@ -34,7 +34,9 @@ public class TransactionController {
     })
     public ResponseEntity<TransactionResponse> post(@RequestBody @Valid TransactionRequest request,
                                                     UriComponentsBuilder uriBuilder) throws InterruptedException {
-       var transaction = transactionService.createTransaction(request);
+
+
+        var transaction = transactionService.createTransaction(request);
 
        return ResponseEntity.ok(transaction);
     }
