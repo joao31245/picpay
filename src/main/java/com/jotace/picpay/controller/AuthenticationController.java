@@ -28,8 +28,14 @@ public class AuthenticationController {
     private UserRepository userRepository;
     @PostMapping("/login")
     public ResponseEntity<LoginResponse> login(@RequestBody @Valid LoginRequest request) {
+
         var usernamePassword = new UsernamePasswordAuthenticationToken(request.email(), request.password());
-        var user = userRepository.findUserByEmail(request.email());
+
+        var authentication =authenticationManager.authenticate(usernamePassword);
+
+        System.out.println(usernamePassword);
+
+        var user = (User) authentication.getPrincipal();
 
         if(user == null) {
             return ResponseEntity.badRequest().body(new LoginResponse("Deu certo não"));
@@ -37,7 +43,7 @@ public class AuthenticationController {
 
         System.out.println("Authorities" + user.getAuthorities());
 
-        var token = tokenService.generateToken((User) user);
+        var token = tokenService.generateToken(user);
 
         return ResponseEntity.ok(new LoginResponse(token));
     }
