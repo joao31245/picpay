@@ -139,6 +139,11 @@ Metodo Post : http://localhost:8080/user
 ```
 ![ComoUsarPostTransaction](https://github.com/joao31245/email-service/assets/134329276/903bdaff-aa4a-4fef-907b-525a846c2857)
 
+O metodo de Transações agora conta com a funcionalidade de pagamento adiantado, basta passar um parametro no json para o tipo da transação
+"transactionType" : "SCHEDULED"
+e um parametro para o horário, lembrando ele so aceita agendamentos para 30 minutos no futuro no minimo e nunca no passado.
+"localDateTime" : "2023-11-24T13:56:00",
+
 Esses são os principais metodos, porém o sistema implementa todo o crud básico. Para mais detalhes, ao rodar a API, consulte: http://localhost:8080/swagger-ui/index.html#
 
 ## 🛠️ Construído com
@@ -146,6 +151,7 @@ Esses são os principais metodos, porém o sistema implementa todo o crud básic
 * [Spring Boot](https://spring.io/projects/spring-boot) - O framework web usado
 * [Maven](https://maven.apache.org/) - Gerente de Dependência
 * [AWS](https://rometools.github.io/rome/) - Para utilizar o serviço de E-mails.
+* * [JWT](https://jwt.io/) - Autenticação via token.
 
 
 ## ✒️ Autores
@@ -156,4 +162,5 @@ Esses são os principais metodos, porém o sistema implementa todo o crud básic
 ## 📄 Licença
 Sob Open Software License v3.0.
 ---
+Espero que gostem!, tudo que eu programo é feito com amor.
 ⌨️ com ❤️ por [João Carlos](https://github.com/joao31245) 😊
