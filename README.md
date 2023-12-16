@@ -151,6 +151,7 @@ Esses são os principais metodos, porém o sistema implementa todo o crud básic
 * [Spring Boot](https://spring.io/projects/spring-boot) - O framework web usado
 * [Maven](https://maven.apache.org/) - Gerente de Dependência
 * [AWS](https://rometools.github.io/rome/) - Para utilizar o serviço de E-mails.
+* * [JWT](https://jwt.io/) - Autenticação via token.
 
 
 ## ✒️ Autores
