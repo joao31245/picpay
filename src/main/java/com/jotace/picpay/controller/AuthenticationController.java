@@ -33,15 +33,11 @@ public class AuthenticationController {
 
         var authentication =authenticationManager.authenticate(usernamePassword);
 
-        System.out.println(usernamePassword);
-
         var user = (User) authentication.getPrincipal();
 
         if(user == null) {
             return ResponseEntity.badRequest().body(new LoginResponse("Deu certo não"));
         }
-
-        System.out.println("Authorities" + user.getAuthorities());
 
         var token = tokenService.generateToken(user);
 

@@ -22,7 +22,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "user", produces = ("application/json"))
-@Tag(name = "Pic Pay simplified")
 public class UserController {
     @Autowired
     private UserService service;

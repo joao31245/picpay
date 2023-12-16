@@ -19,7 +19,6 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
 @RequestMapping(value = "transaction", produces = "application/json")
-@Tag(name = "Pic Pay simplified")
 public class TransactionController {
     @Autowired
     private TransactionService transactionService;
